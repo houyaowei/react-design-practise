@@ -71,20 +71,13 @@ const map = new google.maps.Map(document.getElementById('map'), {
   zoom: 4,
   center: myLatLng,
 })
+const marker = new google.maps.Marker\({
+  position: myLatLng,
+  title: 'Hello World!'
+ })
+marker.setMap\(map\)
 
-# 
-
-# const marker = new google.maps.Marker\({
-
-# position: myLatLng,
-
-# title: 'Hello World!',
-
-# }\)
-
-# marker.setMap\(map\)
-
-# \`\`\`
+```
 
 # 这显然是命令式，因为在代码中描述了创建地图，创建标记，将标记放入地图中的指令。
 
