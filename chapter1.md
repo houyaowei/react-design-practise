@@ -108,20 +108,18 @@ React使用*元素*这种特殊类型的对象来控制UI流程。元素描述�
 DOM元素和组件可以相互嵌套，以表示一个渲染树。
 ```
 {
-
-type: Title,
-props: {
-color: 'red',
-children: {
-type: 'h1',
-props: {
-children: 'Hello, H1!'
-}
-}
-}
+  type: Title,
+  props: {
+  color: 'red',
+    children: {
+        type: 'h1',
+        props: {
+          children: 'Hello, H1!'
+        }
+      }
+  }
 }
 ```
-
 # 当元素的type属性是一个函数时，React会调用它，传入\*\*props\*\*来取回底层元素。React对返回结果进行回调，直到得到一个完整的DOM节点树，渲染到页面。
 
 # 
