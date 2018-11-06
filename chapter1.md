@@ -38,27 +38,18 @@ toLowerCase\(\['FOO', 'BAR'\]\) // \['foo', 'bar'\]
 
 ```
 
-# 命令式函数按如下方式实现：
+命令式函数按如下方式实现：
 
-# 
+```
+ const toLowerCase = input => {
+   const output = [];
+   for (let i = 0; i < input.length; i++) {
+     output.push(input[i].toLowerCase())
+   }
+  return output;
+ }
 
-# \`\`\`
-
-# const toLowerCase = input =&gt; {
-
-#   const output = \[\]
-
-#   for \(let i = 0; i &lt; input.length; i++\) {
-
-#     output.push\(input\[i\].toLowerCase\(\)\)
-
-#   }
-
-#   return output
-
-# }
-
-# \`\`\`
+```
 
 # 首先创建一个空数组来保存结果，通过遍历传入的数组，将数组中的每个元素转为小写存入到空数组，并返回输出该数组。
 
