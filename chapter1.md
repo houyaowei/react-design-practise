@@ -181,3 +181,5 @@ ReactDOM.render(
  mountNode
 );
 ```
+开发者使用JavaScript编写样式的这套方案称作CSS in JavaScript。第7章将对其进行详细介绍。
+
