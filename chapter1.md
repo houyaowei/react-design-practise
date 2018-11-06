@@ -80,7 +80,7 @@ marker.setMap\(map\)
 这显然是命令式，因为在代码中描述了创建地图，创建标记，将标记放入地图中的指令。
 React组件在一个页面上展示地图的方式，如下示例：
 ```
-<Gmaps zoom={4} center={myLatLng}&gt;
+<Gmaps zoom={4} center={myLatLng}>
 
 <Marker position={myLatLng} title="Hello world!" />;
 
