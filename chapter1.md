@@ -84,7 +84,7 @@ React组件在一个页面上展示地图的方式，如下示例：
 
 <Marker position={myLatLng} title="Hello world!" />;
 
-# &lt;/Gmaps&gt;
+</Gmaps>
 
 # \`\`\`
 
