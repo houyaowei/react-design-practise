@@ -7,7 +7,7 @@
 React是最流行的UI开发库之一，因高性能而被人们熟知，这要归功于它巧妙地处理了DOM。
 React使用JSX，一种 JavaScript 的语法扩展。 这需要你重新思考\*关注点分离原则\*。react有许多很酷的特性，例如服务端渲染，该特性让你可以开发通用应用。
 
-# &gt;关注点分离原则，也叫正交原则，HTML CSS JS 分离, 并且互不影响状态转移：js不去修改css 的样式（obj.style.color='red'），只修改css中的状态（addClass\('active'\)）。
+> 关注点分离原则，也叫正交原则，HTML CSS JS 分离, 并且互不影响状态转移：js不去修改css 的样式（obj.style.color='red'），只修改css中的状态（addClass\('active'\)）。
 
 # 
 
