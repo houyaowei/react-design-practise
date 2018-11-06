@@ -81,12 +81,10 @@ marker.setMap\(map\)
 React组件在一个页面上展示地图的方式，如下示例：
 ```
 <Gmaps zoom={4} center={myLatLng}>
-
-<Marker position={myLatLng} title="Hello world!" />;
-
+  <Marker position={myLatLng} title="Hello world!" />;
 </Gmaps>
 
-# \`\`\`
+```
 
 # 在声明式编程中，开发者只需要描述想实现什么么不需要列出具体的步骤。
 
