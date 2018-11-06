@@ -55,9 +55,7 @@ toLowerCase\(\['FOO', 'BAR'\]\) // \['foo', 'bar'\]
 
 ```
 const toLowerCase = input => input.map(
-
-value => value.toLowerCase()
-
+  value => value.toLowerCase()
 )
 ```
 
