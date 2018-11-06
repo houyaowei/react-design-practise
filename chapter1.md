@@ -65,9 +65,7 @@ const toLowerCase = input => input.map(
 我们将解决web开发中一个常见的需求：展示带有标记的地图。
 JavaScript实现（使用Google Maps SDK），如下示例。
 
-# 
-
-# \`\`\`
+```
 
 # const map = new google.maps.Map\(document.getElementById\('map'\), {
 
