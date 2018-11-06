@@ -216,3 +216,10 @@ npm install -g create-react-app
 ```
 安装好这个可执行程序后，就可以通过文件夹名称来创建应用了。
 
+```
+create-react-app hello-world
+```
+最后，执行** cd hello-world **命令进入应用的文件夹，接着运行以下命令：
+ ```
+npm start
+```
