@@ -214,4 +214,5 @@ JavaScript领域很令人吃惊：只要发布或者起草了一个规范，社�
 ```
 npm install -g create-react-app
 ```
+安装好这个可执行程序后，就可以通过文件夹名称来创建应用了。
 
