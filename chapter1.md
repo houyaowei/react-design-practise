@@ -66,7 +66,6 @@ const toLowerCase = input => input.map(
 JavaScript实现（使用Google Maps SDK），如下示例。
 
 ```
-
 const map = new google.maps.Map(document.getElementById('map'), {
   zoom: 4,
   center: myLatLng,
