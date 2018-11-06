@@ -77,18 +77,12 @@ const marker = new google.maps.Marker\({
 marker.setMap\(map\)
 
 ```
+这显然是命令式，因为在代码中描述了创建地图，创建标记，将标记放入地图中的指令。
+React组件在一个页面上展示地图的方式，如下示例：
+```
+<Gmaps zoom={4} center={myLatLng}&gt;
 
-# 这显然是命令式，因为在代码中描述了创建地图，创建标记，将标记放入地图中的指令。
-
-# React组件在一个页面上展示地图的方式，如下示例：
-
-# 
-
-# \`\`\`
-
-# &lt;Gmaps zoom={4} center={myLatLng}&gt;
-
-# &lt;Marker position={myLatLng} title="Hello world!" /&gt;
+<Marker position={myLatLng} title="Hello world!" />;
 
 # &lt;/Gmaps&gt;
 
