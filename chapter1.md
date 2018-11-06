@@ -275,3 +275,7 @@ create-react-app hello-world
  ```
 npm start
 ```
+
+应用只靠一项依赖就可以运行了，但包括了用最先进的技术开发完整React应用所需的一切特性。以下截图展示了create-react-app创建的应用的默认页面。
+![image.png](https://upload-images.jianshu.io/upload_images/117707-fb67a71f443315ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+本书将利用这个工具运行每章中的代码示例，你也可以在本书主页中获取它们：[http://www.ituring.com.cn/book/2007](http://www.ituring.com.cn/book/2007)。
