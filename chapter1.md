@@ -58,8 +58,7 @@ const toLowerCase = input => input.map(
   value => value.toLowerCase()
 )
 ```
-
-##### 参数中的元素会传递到map函数，然后map函数会返回包含小写值的新数组。
+参数中的元素会传递到map函数，然后map函数会返回包含小写值的新数组。
 
 # 
 
