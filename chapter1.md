@@ -231,6 +231,7 @@ ReactDOM.render(
 实际需要引用两个脚本，React分为两个包：核心包**react**，实现了库的核心特性，**react-dom**，包含了所有浏览器相关的特性。这样做的理由是，核心包可以用于支持不同的目标平台，如浏览器中的React DOM以及移动设备上的React Native。
 只需下载发行包并托管到自己的服务器上（或者使用[https://unpkg.com](https://unpkg.com/)），你就可以在短短几分钟内开始使用React及其特性。
 要想使用React，可以在HTML代码中添加以下URL：
+
 *  [https://cdn.bootcss.com/react/15.3.2/react.min.js](https://cdn.bootcss.com/react/15.3.2/react.min.js)
 *  [https://cdn.bootcss.com/react/15.3.2/react-dom.min.js](https://cdn.bootcss.com/react/15.3.2/react-dom.min.js)
 
