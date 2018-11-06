@@ -51,23 +51,18 @@ toLowerCase\(\['FOO', 'BAR'\]\) // \['foo', 'bar'\]
 
 ```
 
-# 首先创建一个空数组来保存结果，通过遍历传入的数组，将数组中的每个元素转为小写存入到空数组，并返回输出该数组。
+首先创建一个空数组来保存结果，通过遍历传入的数组，将数组中的每个元素转为小写存入到空数组，并返回输出该数组。
+声明式实现如下所示：
 
-# 
+```
 
-# 声明式实现如下所示：
+const toLowerCase = input =&gt; input.map\(
 
-# 
+value =&gt; value.toLowerCase\(\)
 
-# \`\`\`
+)
 
-# const toLowerCase = input =&gt; input.map\(
-
-#   value =&gt; value.toLowerCase\(\)
-
-# \)
-
-# \`\`\`
+```
 
 # 参数中的元素会传递到map函数，然后map函数会返回包含小写值的新数组。
 
