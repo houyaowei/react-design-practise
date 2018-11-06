@@ -168,3 +168,15 @@ render() {
 此外，开发React的工程师一直在社区中推广另一个概念：将样式的逻辑也放到组件中。这个概念颇具争议，而且很难被接受。
 React的最终目标是将创建组件所用到的每项技术都封装起来，并根据它们的领域和功能进行关注点分离。
 以下示例展示了React文档中的一个样式对象：
+```
+var divStyle = {
+  color: 'white',
+  backgroundImage: 'url(' + imgUrl + ')',
+  WebkitTransition: 'all', // 注意此处大写的'W'
+  msTransition: 'all' // 'ms'是唯一小写的厂商前缀
+};
+
+ReactDOM.render(
+ <div style={divStyle}>Hello World!</div>,
+ mountNode
+);
