@@ -1,41 +1,41 @@
-
-
 你好！
 
-假设你已经知道了什么是react，并了解它解决了什么问题。你还有可能已经用react开发过中小型项目，但希望进一步提升自己的技能并得到所有未解决问题的答案。
-你应该知道，React由Facebook的开发人员和JavaScript社区中的数百位贡献者维护。
-React是最流行的UI开发库之一，因高性能而被人们熟知，这要归功于它巧妙地处理了DOM。
+假设你已经知道了什么是react，并了解它解决了什么问题。你还有可能已经用react开发过中小型项目，但希望进一步提升自己的技能并得到所有未解决问题的答案。  
+你应该知道，React由Facebook的开发人员和JavaScript社区中的数百位贡献者维护。  
+React是最流行的UI开发库之一，因高性能而被人们熟知，这要归功于它巧妙地处理了DOM。  
 React使用JSX，一种 JavaScript 的语法扩展。 这需要你重新思考\*关注点分离原则\*。react有许多很酷的特性，例如服务端渲染，该特性让你可以开发通用应用。
 
 > 关注点分离原则，也叫正交原则，HTML CSS JS 分离, 并且互不影响状态转移：js不改css 的样式（obj.style.color='red'），只修改css中的状态（ddClass\('active'\)）。
 
-学习本书前，你需要了解在node.js环境中，如何使用命令安装和运行npm。
-本书中所有的示例都遵循ES2015语法，便易于阅读和理解。
+学习本书前，你需要了解在node.js环境中，如何使用命令安装和运行npm。  
+本书中所有的示例都遵循ES2015语法，便易于阅读和理解。  
 在第一章里，我们将介绍一些基础概念，有助于高效地使用react，对于初学者来说理解这些概念非常重要:
+
 * 命令式编程与声明式编程的区别
 * react组件与组件实例，react如何用元素来控制UI流的。
-* react如何改变构建web应用的方式，主张一种新的关注点分离的是什么样的，它选择* 不同的设计理念背后的原因是什么。
+* react如何改变构建web应用的方式，主张一种新的关注点分离的是什么样的，它选择\* 不同的设计理念背后的原因是什么。
 
 为什么人们对javaScript框架感到疲劳，使用react生态系统时，如何避免开发者常见的错误？
 
 #### 1.1 声明式编程
 
-阅读react文档和博客时，你肯定遇到过*声明式*这一词汇。
-事实上，react如此强大的原因之一是它强调了声明式编程规范。
-因此，要掌握react，需要理解声明式编程的概念以及它与命令式编程的区别。
-最简单的理解方式是命令式编程描述代码如何工作，声明式编程则表明想要达到什么目的。
+阅读react文档和博客时，你肯定遇到过_声明式_这一词汇。  
+事实上，react如此强大的原因之一是它强调了声明式编程规范。  
+因此，要掌握react，需要理解声明式编程的概念以及它与命令式编程的区别。  
+最简单的理解方式是命令式编程描述代码如何工作，声明式编程则表明想要达到什么目的。  
 现实生活中一个有关命令式编程的例子，比如去酒吧喝啤酒，对服务员发出以下指令：
+
 * 从架子上取出一个杯子
 * 把杯子放在酒瓶前
 * 取下瓶塞，将被子倒满。
 * 把杯子递给我
 
-在声明式的世界里，你只需说”请给我一杯啤酒“。
-按声明式的方法点一杯啤酒，需要假设服务员知道如何提供啤酒，这是声明式编程工作的一个重要方面。
+在声明式的世界里，你只需说”请给我一杯啤酒“。  
+按声明式的方法点一杯啤酒，需要假设服务员知道如何提供啤酒，这是声明式编程工作的一个重要方面。  
 来看一个JavaScript的示例，写一个简单的函数，传入包含大写字符串的数组，该函数返回包含相同的小写字符串的数组。
+
 ```
 toLowerCase\(\['FOO', 'BAR'\]\) // \['foo', 'bar'\]
-
 ```
 
 命令式函数按如下方式实现：
@@ -48,20 +48,17 @@ toLowerCase\(\['FOO', 'BAR'\]\) // \['foo', 'bar'\]
    }
   return output;
  }
-
 ```
 
-首先创建一个空数组来保存结果，通过遍历传入的数组，将数组中的每个元素转为小写存入到空数组，并返回输出该数组。
+首先创建一个空数组来保存结果，通过遍历传入的数组，将数组中的每个元素转为小写存入到空数组，并返回输出该数组。  
 声明式实现如下所示：
 
 ```
-
 const toLowerCase = input => input.map(
 
 value =&gt; value.toLowerCase\(\)
 
 )
-
 ```
 
 # 参数中的元素会传递到map函数，然后map函数会返回包含小写值的新数组。
@@ -92,9 +89,9 @@ value =&gt; value.toLowerCase\(\)
 
 # const map = new google.maps.Map\(document.getElementById\('map'\), {
 
-#   zoom: 4,
+# zoom: 4,
 
-#   center: myLatLng,
+# center: myLatLng,
 
 # }\)
 
@@ -102,9 +99,9 @@ value =&gt; value.toLowerCase\(\)
 
 # const marker = new google.maps.Marker\({
 
-#   position: myLatLng,
+# position: myLatLng,
 
-#   title: 'Hello World!',
+# title: 'Hello World!',
 
 # }\)
 
@@ -122,7 +119,7 @@ value =&gt; value.toLowerCase\(\)
 
 # &lt;Gmaps zoom={4} center={myLatLng}&gt;
 
-#   &lt;Marker position={myLatLng} title="Hello world!" /&gt;
+# &lt;Marker position={myLatLng} title="Hello world!" /&gt;
 
 # &lt;/Gmaps&gt;
 
@@ -164,15 +161,15 @@ value =&gt; value.toLowerCase\(\)
 
 # {
 
-#   type: Title,
+# type: Title,
 
-#   props: {
+# props: {
 
-#     color: 'red',
+# color: 'red',
 
-#     children: 'Hello, Title!'
+# children: 'Hello, Title!'
 
-#   }
+# }
 
 # }
 
@@ -194,25 +191,25 @@ value =&gt; value.toLowerCase\(\)
 
 # {
 
-#   type: Title,
+# type: Title,
 
-#   props: {
+# props: {
 
-#     color: 'red',
+# color: 'red',
 
-#     children: {
+# children: {
 
-#       type: 'h1',
+# type: 'h1',
 
-#       props: {
+# props: {
 
-#         children: 'Hello, H1!'
+# children: 'Hello, H1!'
 
-#       }
+# }
 
-#     }
+# }
 
-#   }
+# }
 
 # }
 
@@ -247,10 +244,6 @@ value =&gt; value.toLowerCase\(\)
 # 我们来看一个模板的示例：
 
 # 
-
-
-
-
 
 
 
